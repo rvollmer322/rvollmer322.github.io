@@ -2,10 +2,33 @@
 <html>
 	<head>
 		<title>Ryan Vollmer - GitHub Pages</title>
+		
+		<link href="https://vjs.zencdn.net/7.5.5/video-js.css" rel="stylesheet">
 	</head>
 	
 	<body>
 		<h1>Initial commit</h1>
 		<p>GitHub Pages</p>
+		<p></p>
+		
+		<h2>The Hart Island Project</h2>
+		<h4>Embedded YouTube Player</h4>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/wVXJXZ7N21U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<h4>Basic, built-in HTML5 player</h4>
+		<video width="560" height="315" controls>
+			<source src="sample.mp4" type="video/mp4">
+			Your browser does not support the video tag
+		</video>
+		
+		<h4>VideoJS player</h4>
+		<video id='my-video' class='video-js' controls preload='auto' width='560' height='315' data-setup='{}'>
+			<source src='sample.mp4' type='video/mp4'>
+			<p class='vjs-no-js'>
+				To view this video please enable JavaScript, and consider upgrading to a web browser that
+				<a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+			</p>
+		</video>
+		<script src='https://vjs.zencdn.net/7.5.5/video.js'></script>
 	</body>
 </html>
